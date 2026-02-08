@@ -1,0 +1,61 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual environment
+venv/
+.env
+.env.*
+
+# =========================
+# ML / AI models & cache
+# =========================
+.cache/
+huggingface/
+hf_cache/
+*.pt
+*.pth
+*.bin
+*.onnx
+
+# Whisper / Sentence Transformers cache
+.whisper/
+sentence_transformers/
+transformers_cache/
+
+# =========================
+# FastAPI / Backend runtime
+# =========================
+backend/uploads/
+backend/processed/
+backend/temp/
+*.log
+
+# =========================
+# Vector stores / indexes
+# =========================
+*.index
+*.faiss
+*.db
+
+# =========================
+# Node / Frontend
+# =========================
+node_modules/
+dist/
+.vite/
+*.lock
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================

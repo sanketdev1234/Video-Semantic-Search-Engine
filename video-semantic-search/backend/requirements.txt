@@ -1,0 +1,21 @@
+# Core Framework
+fastapi
+uvicorn
+python-multipart
+pydantic
+pydantic-settings
+
+# Video Processing
+opencv-python
+pillow
+
+# Audio & Speech
+openai-whisper
+
+# Embeddings & Search
+sentence-transformers
+faiss-cpu
+numpy
+
+# Utilities
+python-dotenv
