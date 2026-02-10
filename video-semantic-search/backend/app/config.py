@@ -14,6 +14,7 @@ class Settings(BaseSettings):
     UPLOAD_DIR: str = "uploads"
     PROCESSED_DIR: str = "processed"
     TEMP_DIR: str = "temp"
+    INDEX_DIR: str = "indexes"
 
     # Models
     WHISPER_MODEL: str = "base"
@@ -21,9 +22,10 @@ class Settings(BaseSettings):
     DEVICE: str = "cpu"
 
     # Processing
-    FRAME_INTERVAL_SECONDS: int = 2
+    FRAME_INTERVAL_SECONDS: int = 10
     MAX_VIDEO_SIZE_MB: int = 200
     BATCH_SIZE: int = 16
+    MAX_FRAMES: int = 10
 
     # Search
     TOP_K_RESULTS: int = 5
@@ -46,5 +48,6 @@ def setup_directories():
         settings.UPLOAD_DIR,
         settings.PROCESSED_DIR,
         settings.TEMP_DIR,
+        settings.INDEX_DIR,
     ]:
         os.makedirs(dir_path, exist_ok=True)

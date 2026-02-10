@@ -1,61 +1,54 @@
-# =========================
 # Python
-# =========================
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
+*$py.class
 *.so
+.Python
+venv/
+ENV/
+env/
 *.egg-info/
-.eggs/
 dist/
 build/
 
-# Virtual environment
-venv/
+# Environments
 .env
-.env.*
+.venv
 
-# =========================
-# ML / AI models & cache
-# =========================
-.cache/
-huggingface/
-hf_cache/
-*.pt
-*.pth
-*.bin
-*.onnx
+# Video files and data
+uploads/
+processed/
+temp/
+indexes/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.wav
 
-# Whisper / Sentence Transformers cache
-.whisper/
-sentence_transformers/
-transformers_cache/
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
-# =========================
-# FastAPI / Backend runtime
-# =========================
-backend/uploads/
-backend/processed/
-backend/temp/
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
 *.log
 
-# =========================
-# Vector stores / indexes
-# =========================
-*.index
-*.faiss
-*.db
-
-# =========================
-# Node / Frontend
-# =========================
+# Node
 node_modules/
-dist/
-.vite/
-*.lock
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+dist/
+.npm
+.eslintcache
 
-# =========================
+# Build
+*.pyc
+*.pyo
